@@ -6,7 +6,6 @@
   <title>MEGABOOST Meme Coin</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Sora&display=swap" rel="stylesheet" />
   <style>
-    /* ------------------- General Layout ------------------- */
     body {
       margin: 0;
       font-family: 'Sora', sans-serif;
@@ -41,7 +40,6 @@
       text-align: center;
     }
 
-    /* ------------------- Hero Section Background ------------------- */
     #home {
       background: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2RyNXZzZ255dmQxbm84MDByYzA1cGloMjdnOXJ2Zms5cmp1bTA2byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TxVVB6PfWMjE4/giphy.gif') repeat;
       padding-top: 2rem;
@@ -63,7 +61,6 @@
     .tagline {
       font-size: 1.5rem;
       margin-top: 1rem;
-      margin-bottom: 1.5rem;
     }
 
     .btn {
@@ -97,7 +94,7 @@
     }
 
     .funny-img {
-      width: 400px;
+      width: 150px;
       margin: 0 auto;
       display: block;
       border-radius: 50%;
@@ -166,76 +163,63 @@
       background: #ff3293;
     }
 
-    /* ------------------- Mobile-Only Adjustments ------------------- */
     @media screen and (max-width: 768px) {
-      #home {
-        padding-top: 1rem; /* Reduce hero top padding */
-        padding-bottom: 1rem;
-      }
-
       h1 {
         font-size: 2.5rem;
-        margin-bottom: 0.2rem;
       }
 
-      .funny-img {
-        width: 60%;
-        max-width: 250px;
-        margin: 0.5rem auto;
+      h2 {
+        font-size: 1.5rem;
       }
 
       .tagline {
         font-size: 1.2rem;
-        margin-top: 0.3rem;
-        margin-bottom: 0.5rem;
       }
 
-      .token-container {
-        margin: 0.8rem auto;
+      .btn {
+        width: 90%;
+        max-width: 300px;
+        padding: 0.8rem;
+        font-size: 1rem;
+      }
+
+      .social-icons img {
+        width: 40px;
+        margin: 0.5rem;
+      }
+
+      .funny-img {
+        width: 80%;
+        max-width: 300px;
+      }
+
+      iframe {
+        width: 100%;
+        height: 400px;
       }
 
       .token-box {
         flex-direction: column;
         align-items: center;
-        font-size: 0.9rem;
-        padding: 0.5rem;
-        gap: 0.5rem;
+        font-size: 0.95rem;
+        padding: 1rem;
+        text-align: center;
       }
 
       .token-box span {
-        font-size: 0.85rem;
+        font-size: 0.9rem;
         width: 100%;
-        padding: 0.15rem 0.1rem;
       }
 
       .copy-btn {
         width: auto;
-        margin-top: 0.2rem;
-        padding: 0.3rem 0.7rem;
-      }
-
-      .btn {
-        width: 90%;
-        max-width: 280px;
-        padding: 0.6rem;
-        font-size: 1rem;
-        margin: 0.4rem auto;
-      }
-
-      section {
-        min-height: 50vh;
-        padding: 1rem;
-      }
-
-      iframe {
-        height: 400px;
+        margin-top: 0.5rem;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- Navigation -->
   <header>
     <a href="#home">Home</a>
     <a href="#about">About</a>
@@ -243,10 +227,9 @@
     <a href="#chart">Live Chart</a>
   </header>
 
-  <!-- HERO Section -->
   <section id="home">
     <h1>MEGABOOST</h1>
-    <img class="funny-img" src="logo_2.png" alt="Shiba Icon" style="border-radius: 0%;">
+    <img class="funny-img" src="logo_2.png" alt="Shiba Icon" style="width:400px; max-width:90vw; border-radius: 0%;">
     <p class="tagline">The only coin that fuels your meme-rocket to the moon!</p>
 
     <div class="token-container">
@@ -262,10 +245,9 @@
     <button class="btn">Chart</button>
   </section>
 
-  <!-- About -->
   <section id="about">
     <h2>About MEGABOOST</h2>
-    <div style="max-width:800px;margin:2rem auto;font-size:1rem;line-height:1.5;letter-spacing:0.5px;display:flex;flex-direction:column;align-items:center;">
+    <div style="max-width:800px;margin:2rem auto;font-size:2rem;line-height:1.5;letter-spacing:0.5px;display:flex;flex-direction:column;align-items:center;">
       <span>MEGABOOST is not your average meme coin.</span>
       <span>It's powered by the strength of rocket memes, cool dogs, and space dreams.</span>
       <span>Whether you're here for the gains or the laughs, we promise one thing:</span>
@@ -274,7 +256,6 @@
     <img class="funny-img" src="moon.png" alt="Rocket Dog" style="width:350px; max-width:90vw; border-radius:15%;">
   </section>
 
-  <!-- Community -->
   <section id="community">
     <h2>Join Our Community</h2>
     <img class="funny-img" src="community.png" alt="Rocket Dog" style="width:450px; max-width:90vw; border-radius:0;">
@@ -285,16 +266,13 @@
     </div>
   </section>
 
-  <!-- Chart -->
   <section id="chart">
     <h2>Live Price Chart</h2>
     <iframe src="https://dexscreener.com/solana/45fffdevgaik9mradpfkhnlbfghtsvwqjx3mnlxhv5hk?theme=dark"></iframe>
   </section>
 
-  <!-- Back to Top Button -->
   <button onclick="scrollToTop()" id="backToTopBtn">Top</button>
 
-  <!-- JavaScript -->
   <script>
     function copyToken() {
       const tokenText = document.getElementById("tokenAddress").innerText;
@@ -306,16 +284,18 @@
     }
 
     const backToTopBtn = document.getElementById("backToTopBtn");
+
     window.onscroll = function () {
-      backToTopBtn.style.display =
-        document.body.scrollTop > 300 || document.documentElement.scrollTop > 300
-          ? "block" : "none";
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        backToTopBtn.style.display = "block";
+      } else {
+        backToTopBtn.style.display = "none";
+      }
     };
 
     function scrollToTop() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   </script>
-
 </body>
 </html>
