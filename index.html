@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MEGABOOST Meme Coin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Sora&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Sora', sans-serif;
+      background: linear-gradient(180deg, #000000 0%, #0c0022 100%);
+      color: white;
+      overflow-x: hidden;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(0, 0, 0, 0.85);
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      z-index: 10;
+      font-family: 'Orbitron', sans-serif;
+      flex-wrap: wrap;
+    }
+
+    header a {
+      color: #00f0ff;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    section {
+      min-height: 100vh;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    #home {
+      background: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2RyNXZzZ255dmQxbm84MDByYzA1cGloMjdnOXJ2Zms5cmp1bTA2byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TxVVB6PfWMjE4/giphy.gif') repeat;
+    }
+
+    h1 {
+      font-size: 4rem;
+      font-family: 'Orbitron', sans-serif;
+      color: #FF007F;
+    }
+
+    h2 {
+      font-size: 2rem;
+      font-family: 'Orbitron', sans-serif;
+      color: #FF007F;
+    }
+
+    .btn {
+      background: #FF007F;
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      margin: 1rem;
+      border-radius: 50px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+    }
+
+    .social-icons img {
+      width: 50px;
+      margin: 1rem;
+    }
+
+    iframe {
+      width: 90%;
+      height: 600px;
+      border: none;
+      border-radius: 12px;
+      margin-top: 2rem;
+    }
+
+    .funny-img {
+      width: 150px;
+      margin: 1rem auto;
+      display: block;
+      border-radius: 50%;
+    }
+
+    .token-container {
+      display: flex;
+      justify-content: center;
+      margin: 2rem auto;
+    }
+
+    .token-box {
+      background: linear-gradient(90deg, #00f0ff, #ff007f);
+      padding: 1rem 2rem;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      letter-spacing: 1px;
+      color: black;
+      box-shadow: 0 0 10px #ff007f;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .token-box span {
+      font-family: 'Courier New', monospace;
+      background: #000;
+      padding: 0.3rem 0.2rem;
+      border-radius: 20px;
+      color: #00f0ff;
+      word-break: break-all;
+    }
+
+    .copy-btn {
+      background: #000;
+      color: #00f0ff;
+      border: 2px solid #00f0ff;
+      border-radius: 20px;
+      padding: 0.4rem 1rem;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    #backToTopBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #FF007F;
+      color: white;
+      border: none;
+      border-radius: 50px;
+      padding: 0.7rem 1.2rem;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 0 10px #FF007F;
+      z-index: 100;
+      display: none;
+    }
+
+    #backToTopBtn:hover {
+      background: #ff3293;
+    }
+
+    /* Mobile responsiveness */
+    @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      .btn {
+        width: 90%;
+        max-width: 300px;
+        padding: 0.8rem;
+        font-size: 1rem;
+      }
+
+      .social-icons img {
+        width: 40px;
+        margin: 0.5rem;
+      }
+
+      .funny-img {
+        width: 80%;
+        max-width: 300px;
+      }
+
+      iframe {
+        width: 100%;
+        height: 400px;
+      }
+
+      .token-box {
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.95rem;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      .token-box span {
+        font-size: 0.9rem;
+        width: 100%;
+      }
+
+      .copy-btn {
+        width: auto;
+        margin-top: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#community">Join Community</a>
+    <a href="#chart">Live Chart</a>
+  </header>
+
+  <section id="home">
+    <h1>🚀 MEGABOOST</h1>
+    <img class="funny-img" src="1logo.png" alt="Shiba Icon" style="width:400px; max-width:90vw;">
+    <p>The only coin that fuels your meme-rocket to the moon!</p>
+
+    <div class="token-container">
+      <div class="token-box">
+        🔐 TOKEN ADDRESS:
+        <span id="tokenAddress">w6iohhdC6zbq2DP1uwtmvXPJibbFroDnni1A222bonk</span>
+        <button onclick="copyToken()" class="copy-btn">📋 Copy</button>
+      </div>
+    </div>
+
+    <button class="btn">💸 Buy Now</button>
+    <button class="btn">📈 View on Dextools</button>
+    <button class="btn">💹 Chart</button>
+  </section>
+
+  <section id="about">
+    <h2>About MEGABOOST</h2>
+    <div style="max-width:800px;margin:2rem auto;font-size:2rem;line-height:1.5;letter-spacing:0.5px;display:flex;flex-direction:column;align-items:center;">
+      <span>🚀 MEGABOOST is not your average meme coin. 🐕</span>
+      <span>It's powered by the strength of rocket memes, 🔥 cool dogs, 🌌 and space dreams.</span>
+      <span>Whether you're here for the gains 💰 or the laughs 😂, we promise one thing:</span>
+      <span>a wild ride to the meme galaxy 🪐🚀</span>
+    </div>
+    <img class="funny-img" src="float.png" alt="Rocket Dog" style="width:350px; max-width:90vw;">
+  </section>
+
+  <section id="community">
+    <h2>Join Our Community</h2>
+    <img class="funny-img" src="community.png" alt="Rocket Dog" style="width:450px; max-width:90vw; border-radius:0;">
+    <div class="social-icons">
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3670/3670151.png" alt="Telegram"></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3670/3670211.png" alt="Twitter"></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord"></a>
+    </div>
+  </section>
+
+  <section id="chart">
+    <h2>Live Price Chart</h2>
+    <iframe src="https://dexscreener.com/solana/45fffdevgaik9mradpfkhnlbfghtsvwqjx3mnlxhv5hk?theme=dark"></iframe>
+  </section>
+
+  <button onclick="scrollToTop()" id="backToTopBtn">⬆️ Top</button>
+
+  <script>
+    function copyToken() {
+      const tokenText = document.getElementById("tokenAddress").innerText;
+      navigator.clipboard.writeText(tokenText).then(() => {
+        alert("Token address copied to clipboard! 🚀");
+      }, () => {
+        alert("Failed to copy token address.");
+      });
+    }
+
+    const backToTopBtn = document.getElementById("backToTopBtn");
+
+    window.onscroll = function () {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        backToTopBtn.style.display = "block";
+      } else {
+        backToTopBtn.style.display = "none";
+      }
+    };
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
